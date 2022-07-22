@@ -843,26 +843,6 @@ body {
   line-height: 28px;
   color: #ffffff;
 }
-.filter-options__item:hover {
-  background: #ff553e;
-  transition: all 0.5s ease;
-}
-.filter-options__item:hover * {
-  color: #ffffff;
-  transition: all 0.5s ease;
-}
-.filter-options__item:hover > .filter-options__button {
-  background: #ffffff;
-  color: #ff553e;
-  transition: all 0.5s ease;
-}
-.filter-options__item:hover > .filter-options__button:hover {
-  background: #fbe7e4;
-}
-.filter-options__item.active {
-  background: #ff553e;
-  transition: all 0.5s ease;
-}
 .filter-options__premium {
   position: relative;
   z-index: 10;
@@ -888,9 +868,19 @@ body {
   background-image: url("../img/pricing/vector.svg");
 }
 
-.active {
+.active * {
   background-color: #ff553e;
+  color: #ffffff;
   border-radius: 110px;
+  transition: all 0.5s ease;
+}
+.active * .filter-options__button {
+  background-color: #ffffff;
+  color: #ff553e;
+}
+.active * .filter-options__button:hover {
+  background-color: #fbe7e4;
+  border: #ffffff 5px solid;
 }
 
 /* The switch - the box around the slider */
