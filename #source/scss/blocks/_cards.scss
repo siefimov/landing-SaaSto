@@ -1,0 +1,51 @@
+.cards {
+   display: flex;
+   justify-content: space-between;
+   gap: 32px;
+   position: relative;
+   z-index: 10;
+   &__item {
+      box-shadow: 14px 20px 48px rgba(25, 15, 44, 0.06);
+      border-radius: 48px;
+      max-width: 369px;
+      min-height: 250px;
+   }
+   &__item-one {
+      background: #70d0dc;
+   }
+   &__item-two {
+      background: #7562e0;
+   }
+   &__item-tree {
+      background: #fa865f;
+   }
+   &__content {
+      padding: 27px 34px 27px 28px;
+      
+   }
+   &__icon {
+      width: 88px;
+      height: 85.22px;
+      background: rgba(255, 255, 255, 0.5);
+      box-shadow: 14px 20px 48px rgba(25, 15, 44, 0.06);
+      border-radius: 24px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 23px;
+   }
+   &__title {
+      font-family: $secondFontFamily;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 100%;
+      color: #ffffff;
+      margin-bottom: 10px;
+   }
+   &__description {
+      line-height: 26px;
+      color: #ffffff;
+      opacity: 0.8;
+   }
+}

@@ -1,0 +1,27 @@
+.expertises {
+   margin-bottom: 55px;
+   margin-left: 80px;
+   padding-top: 94px;
+   max-width: 696px;
+   width: 100%;
+   
+   &__row {
+      display: flex;
+      margin-left: 80px;
+      max-width: 696px;
+      justify-content: space-between;
+   }
+   &__number {
+      font-family: $secondFontFamily;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 64px;
+      color: #18063c;
+      margin-bottom: 10px;
+   }
+   &__text {
+      line-height: 18px;
+      color: #404040;
+      opacity: 0.6;
+   }
+}

@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+html,
+body {
+   font-family: "Inter", sans-serif;
+   font-size: 18px;
+   font-weight: 400;
+   color: $baseFontColor;
+   line-height: 36px;
+   // opacity: 0.8;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+   overflow: hidden;
+
+   position: relative;
+}
+
+.container {
+   max-width: 1218px;
+   padding: 0 24px;
+   margin: auto;
+   box-sizing: border-box; /* щоб padding не виходив в розмір контенеру */
+}
+
+.main {
+   /* це дозволить main збільшуватися та притиснути футер до низу */
+   flex: 1 1 auto;
+   position: relative;
+}
+.footer {
+   // flex: 0 1 auto;
+}
+
+.none{
+   display: none;
+}

@@ -1,0 +1,46 @@
+.features {
+   position: relative;
+   top: -165px;
+   background-image: url("../img/funfact/back.png");
+   background-repeat: no-repeat;
+   z-index: 10;
+   &__inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 82px;
+      margin-bottom: 60px;
+      position: relative;
+   }
+   &__text {
+      // margin-top: 163px;
+      margin-bottom: 75px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      max-width: 784px;
+   }
+   &__text-title {
+      font-family: $secondFontFamily;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 70px;
+      text-transform: capitalize;
+      color: #18063c;
+      margin-bottom: 19px;
+   }
+   &__text-text {
+      color: $baseFontColor;
+      opacity: 0.8;
+      max-width: 659px;
+   }
+   &__rocket {
+      position: absolute;
+      top: 50px;
+      right: -20px;
+      z-index: 10;
+   }
+}

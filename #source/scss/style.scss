@@ -1,0 +1,28 @@
+//  Base
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/base";
+
+// Blocks
+@import "./blocks/header/header";
+@import "./blocks/features";
+@import "./blocks/cards";
+@import "./blocks/funfact";
+@import "./blocks/expertises";
+@import "./blocks/analytics";
+@import "./blocks/tracker";
+@import "./blocks/pricing";
+@import "./blocks/filter-options";
+@import "./blocks/switcher";
+@import "./blocks/partners";
+
+// CLients
+@import "blocks/clients/clients";
+@import "blocks/clients/top-row";
+@import "blocks/clients/bottom-row";
+@import "blocks/clients/content-navigator";
+
+// App
+@import "blocks/app/app";
+
+@import "blocks/footer"

@@ -1,0 +1,132 @@
+.analytics {
+   position: relative;
+   // padding: 188px 0 189px 0;
+   &__inner {
+      display: flex;
+      align-items: center;
+   }
+   &__objects {
+      flex: 1 1 50%;
+      margin: 70px 19px 141px 0;
+      padding-top: 70px;
+
+      position: relative;
+      z-index: 10;
+   }
+   &__objects-img {
+      padding-left: 330px;
+   }
+   &__objects-todo {
+      position: absolute;
+      right: 74px;
+      top: 2px;
+   }
+   &__objects-charts {
+      position: absolute;
+      right: 35px;
+      bottom: 150px;
+   }
+   &__objects-icons {
+      position: absolute;
+      bottom: -35px;
+      right: 90px;
+   }
+   &__objects-person {
+      position: absolute;
+      left: 210px;
+      top: 245px;
+   }
+   &__objects-vector1{
+      position: absolute;
+      top: 35px;
+      left: 221px;
+   }
+   &__objects-vector2{
+      position: absolute;
+      bottom: 80px;
+      right: 18px;
+   }
+
+   &__objects-backside {
+      width: 776px;
+      height: 616px;
+      background: #fff8f2;
+      border-radius: 0px 20px 20px 0px;
+      position: absolute;
+      left: 0;
+      top: 157px;
+      z-index: -1;
+   }
+
+   &__content {
+      flex: 1 1 50%;
+      margin-left: 15px;
+   }
+   &__content-description {
+      margin-bottom: 48px;
+      max-width: 569px;
+      position: relative;
+   }
+   &__content-title {
+      font-family: $secondFontFamily;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 68px;
+      color: #18063c;
+      margin-bottom: 20px;
+   }
+   &__content-text {
+      opacity: 0.8;
+   }
+   &__content-img {
+      position: absolute;
+      top: 40px;
+      right: 140px;
+      z-index: -1;
+   }
+}
+
+.content-blocks {
+   display: flex;
+   flex-direction: column;
+
+   position: relative;
+   &__item {
+      display: flex;
+      margin-bottom: 48px;
+   }
+   &__item-img {
+      width: 88px;
+      height: 88px;
+      border-radius: 20px;
+      margin-right: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   &__item-img01 {
+      background: #fa855c;
+   }
+   &__item-img02 {
+      background: #7ad6e1;
+   }
+   &__item-img03 {
+      background: #ffc954;
+   }
+
+   &__description {
+      max-width: 365px;
+   }
+   &__description-title {
+      font-family: $secondFontFamily;
+      font-weight: 600;
+      font-size: 28px;
+      margin-bottom: 8px;
+   }
+   &__description-text {
+      opacity: 0.8;
+   }
+   &__description--tracker{
+      max-width: 300px;
+   }
+}

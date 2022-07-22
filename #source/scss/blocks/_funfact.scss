@@ -1,0 +1,11 @@
+.funfact {
+   position: absolute;
+   top: -320px;
+   left: 0;
+   z-index: 2;
+   width: 100%;
+   background-image: url("../img/funfact/back.png");
+   &__inner {
+      padding-top: 94px;
+   }
+}

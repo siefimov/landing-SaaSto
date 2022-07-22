@@ -1,0 +1,35 @@
+.bottom-row {
+   display: flex;
+   align-items: center;
+   &__ellipse {
+      width: 298px;
+      height: 379px;
+      background: #fff8f2;
+      border-radius: 370px;
+      margin-right: 48px;
+   }
+   &__content {
+      max-width: 652px;
+   }
+   &__content-text {
+      max-width: 652px;
+      margin-bottom: 36px;
+      font-size: 20px;
+      opacity: 0.8;
+   }
+   &__content-name {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 24px;
+      color: #38363c;
+      margin-bottom: 16px;
+   }
+   &__content-job {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      color: #38363c;
+      opacity: 0.7;
+      margin-bottom: 28px;
+   }
+}

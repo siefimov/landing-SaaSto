@@ -1,0 +1,117 @@
+.partners {
+   background: #f8fefe;
+   padding: 120px 0 80px 0;
+   &__inner {
+      display: flex;
+   }
+   &__tools {
+      display: flex;
+      justify-content: end;
+      flex-basis: 50%;
+      gap: 56px;
+      margin-right: 85px;
+   }
+   &__tools-left {
+      display: flex;
+      flex-direction: column;
+      // justify-content: end;
+      align-items: flex-end;
+      gap: 54px;
+   }
+   &__left-1 {
+      width: 240px;
+      height: 152px;
+      background: rgba(243, 83, 37, 0.1);
+      border-radius: 40px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   &__left-2 {
+      width: 358px;
+      height: 239px;
+      background: rgba(255, 186, 0, 0.1);
+      border-radius: 54px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   &__left-3 {
+      width: 240px;
+      height: 152px;
+      background: rgba(28, 96, 191, 0.1);
+      border-radius: 48px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   &__tools-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 54px;
+   }
+   &__right-1 {
+      width: 315px;
+      height: 204px;
+      background: rgba(51, 214, 100, 0.1);
+      border-radius: 48px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   &__right-2 {
+      width: 385px;
+      height: 243px;
+      background: rgba(66, 133, 244, 0.1);
+      border-radius: 54px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   &__content {
+      flex-basis: 50%;
+      padding-top: 128px;
+      max-width: 525px;
+   }
+   &__title {
+      font-family: $secondFontFamily;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 70px;
+      color: #18063c;
+      margin-bottom: 24px;
+   }
+   &__text {
+      display: inline-block;
+      opacity: 0.8;
+      margin-bottom: 48px;
+      box-sizing: border-box;
+      max-width: 471px;
+   }
+   &__link {
+      font-family: $secondFontFamily;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      color: #ff553e;
+
+      border: 1px solid #ff553e;
+      border-radius: 40px;
+
+      padding: 24px 40px;
+      display: inline-block;
+      box-sizing: border-box;
+   }
+   &__link:hover{
+      background-color: #fbe7e4;
+   }
+}

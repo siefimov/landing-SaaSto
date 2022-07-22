@@ -1,0 +1,49 @@
+.footer {
+   position: relative;
+   z-index: 999;
+   background: white;
+
+   &__inner {
+      display: flex;
+      flex-direction: column;
+      margin: 129px 0 60px;
+      position: relative;
+      z-index: 20;
+   }
+   &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 101px;
+   }
+}
+
+.social {
+   max-width: 192px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+   text-align: center;
+   &__instagram,
+   &__facebook,
+   &__linkedin,
+   &__twitter {
+      display: flex;
+      align-items: center;
+   }
+}
+
+.terms {
+   display: flex;
+      justify-content: space-between;
+   &__documents {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+   }
+   &__documents-tac{
+      margin-right: 48px;
+
+   }
+}

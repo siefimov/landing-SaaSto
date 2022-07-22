@@ -1,0 +1,70 @@
+.pricing {
+   padding: 140px 0 160px 0;
+   position: relative;
+   &__inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+   &__text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 48px;
+   }
+   &__filter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 64px;
+   }
+   &__text-title {
+      font-family: $secondFontFamily;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 70px;
+      color: #18063c;
+   }
+   &__text-paragraph {
+      opacity: 0.8;
+   }
+   &__filter-monthly,
+   &__filter-yearly {
+      font-family: $secondFontFamily;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      color: #404040;
+   }
+   &__filter-switcher {
+      width: 84px;
+      height: 40px;
+      background: rgba(255, 85, 62, 0.2);
+      border-radius: 20px;
+      margin: 0 20px;
+
+      // display: flex;
+      // justify-content: end;
+      // align-items: center;
+      transition: all 0.5s ease;
+   }
+   &__filter-circle {
+      width: 28px;
+      height: 28px;
+      background: #ff553e;
+      border-radius: 50%;
+      margin-right: 6px;
+      margin-left: 6px;
+      // transform: translate(0px);
+   }
+   &__img-hand{
+      position: absolute;
+      left: -90px;
+      bottom: 201px;
+      transform: rotate(15deg);
+   }
+}
+
+
