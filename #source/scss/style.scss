@@ -2,6 +2,7 @@
 @import "./base/vars";
 @import "./base/reset";
 @import "./base/base";
+@import "base/mixins";
 
 // Blocks
 @import "./blocks/header/header";
@@ -25,4 +26,10 @@
 // App
 @import "blocks/app/app";
 
-@import "blocks/footer"
+@import "blocks/footer";
+
+@import "base/media";
+
+.none {
+   display: none;
+}

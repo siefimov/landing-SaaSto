@@ -3,7 +3,6 @@ let bodyHeight = document.querySelector("body").offsetHeight;
 console.log(bodyWidth);
 console.log(bodyHeight);
 
-
 // Block pricing
 
 const switchBox = document.querySelector(".switch__input");
@@ -13,7 +12,7 @@ switchBox.addEventListener("click", () => {
       document
          .querySelector(".filter-options__premium")
          .classList.add("active");
-         document
+      document
          .querySelector(".filter-options__free")
          .classList.remove("active");
    } else {
@@ -23,4 +22,27 @@ switchBox.addEventListener("click", () => {
          .classList.remove("active");
    }
    console.log(switchBox.checked);
+});
+
+// Header burgerdqs
+const burger = document.querySelector(".header__burger");
+
+burger.addEventListener("click", () => {
+   document.querySelector(".header__top-auth").classList.toggle("actived");
+   document.querySelector(".header__top-nav").classList.toggle("actived");
+});
+
+// Clients - slider
+const navItem = document.querySelectorAll(".content-navigator__item");
+
+navItem.forEach((elem) => {
+   elem.addEventListener("click", () => {
+      let itemActive = document.querySelector(".item-active");
+      itemActive.classList.remove("item-active");
+      elem.classList.toggle("item-active");
+
+      // let wrapperNone = document.querySelector(".bottom-row__wrapper.none");
+      // wrapperNone.classList.remove('none');
+
+   });
 });

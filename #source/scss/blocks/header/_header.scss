@@ -1,39 +1,51 @@
 .header {
    background-color: #fff8f2;
    position: relative;
-   height: 1126px;
+   max-height: 1126px;
+   &__inner {
+      display: flex;
+   }
    &__top {
       display: flex;
       justify-content: space-between;
       margin-top: 48px;
-      margin-bottom: 220px;
+      // margin-bottom: 220px;
+      @include adaptive-value("margin-bottom", 220, 75, 0);
+      position: relative;
    }
    &__content {
-      max-width: 800px;
+      // max-width: 800px;
+      @include adaptive-value("width", 800, 314, 0);
       margin: 0 auto 368px;
+      margin-top: 0;
+
       text-align: center;
       position: relative;
       z-index: 10;
 
       display: flex;
       flex-direction: column;
-      // justify-content: center;
       align-items: center;
    }
    &__content-title {
       font-family: $secondFontFamily;
       font-weight: 700;
-      font-size: 64px;
-      line-height: 90px;
+      // font-size: 64px;
+      @include adaptive-value("font-size", 64, 28, 0);
+      // line-height: 90px;
+      @include adaptive-value("line-height", 90, 50, 0);
       color: #1c0e0d;
       margin-bottom: 24px;
+      @include adaptive-value("margin-bottom", 24, 12, 0);
    }
    &__content-text {
-      font-size: 20px;
+      // font-size: 20px;
+      @include adaptive-value("font-size", 20, 16, 0);
       color: #40201e;
       opacity: 0.8;
       margin-bottom: 68px;
-      max-width: 595px;
+      // max-width: 595px;
+      @include adaptive-value("max-width", 595, 307, 0);
       text-align: center;
    }
    &__content-btn {
@@ -49,27 +61,30 @@
    &__content-btn:hover {
       opacity: 0.7;
    }
-   // &__mobile-screen {
-   //    position: absolute;
-   //    top: 100px;
-   //    left: 30px;
-   //    width: 1860px;
-   //    height: 1237px;
-   // }
    &__img-left {
       position: absolute;
-      left: 33px;
-      bottom: 38px;
-      width: 343px;
-      height: 680px;
+      // left: 33px;
+      left: calc(14px + (33 - 14) * ((100vw - 1170px) / (1920 - 1170)));
+      // bottom: 38px;
+      bottom: calc(260px + (38 - 260) * ((100vw - 1170px) / (1920 - 1170)));
+      // max-width: 343px;
+      max-width: 17.9%;
+      // max-height: 680px;
+      max-height: 60.4%;
       transform: rotate(-15deg) translate(20px);
    }
    &__img-right {
       position: absolute;
-      right: 60px;
-      bottom: -210px;
-      width: 467px;
-      height: 926px;
+      // right: 60px;
+      right: calc(30px + (60 - 30) * ((100vw - 1170px) / (1920 - 1170)));
+
+      // bottom: -210px;
+      bottom: calc(210px + (-210 - 210) * ((100vw - 1170px) / (1920 - 1170)));
+
+      // width: 467px;
+      width: calc(263px + (467 - 263) * ((100vw - 1170px) / (1920 - 1170)));
+      // height: 926px;
+      height: calc(522px + (926 - 522) * ((100vw - 1170px) / (1920 - 1170)));
       transform: rotate(15deg);
    }
    &__img {
@@ -78,23 +93,38 @@
       display: block;
       padding: 0;
    }
-   &__elements {
-      position: absolute;
-      top: 230px;
-      left: 376px;
-      width: 1053px;
-      height: 531px;
-      z-index: 5;
-   }
+   // &__elements {
+   //    position: absolute;
+   //    top: 230px;
+   //    left: 376px;
+   //    max-width: 1053px;
+   //    width: 100%;
+   //    max-height: 531px;
+   //    height: 100%;
+   //    z-index: 5;
+   // }
    &__elements-alarm {
+      display: inline-block;
       position: absolute;
-      top: 0;
-      left: 0;
+      top: -78px;
+      @include adaptive-value("top", -78, -50, 0);
+      left: -179.46px;
+      @include adaptive-value("left", -179.46, -30, 0);
+      @include adaptive-value("width", 136.99, 65.17, 0);
+      @include adaptive-value("height", 157.27, 75.86, 0);
+   }
+   &__elements-alarm-item {
+      width: 100%;
+      height: 100%;
    }
    &__elements-todo {
       position: absolute;
-      right: 0;
-      bottom: 0;
+      right: -61px;
+      @include adaptive-value("right", -61, 75, 0);
+      bottom: -10px;
+      @include adaptive-value("bottom", -10, 105, 0);
+      @include adaptive-value("width", 180.64, 36, 0);
+      @include adaptive-value("height", 191, 38, 0);
    }
    &__figures {
       position: absolute;
@@ -109,33 +139,74 @@
    }
    &__zigzag-top-right {
       position: absolute;
-      top: 0;
+      // top: 0;
+      @include adaptive-value("top", 0, 40, 0);
       right: 0;
+      @include adaptive-value("width", 85.25, 42.6, 0);
+      @include adaptive-value("height", 134, 67, 0);
    }
    &__zigzag-top-right2 {
       position: absolute;
       top: 130px;
+      @include adaptive-value("top", 130, -21, 0);
       right: 330px;
+      @include adaptive-value("right", 330, 157, 0);
+      @include adaptive-value("width", 88.29, 44.145, 0);
+      @include adaptive-value("height", 122, 61, 0);
    }
    &__zigzag-left-top {
       position: absolute;
       left: 0;
+      @include adaptive-value("left", 0, 50, 0);
       top: 100px;
+      @include adaptive-value("top", 100, 130, 0);
+      @include adaptive-value("width", 176.58, 88.29, 0);
+      @include adaptive-value("height", 126, 63, 0);
    }
    &__zigzag-left-bottom {
       position: absolute;
       bottom: 0;
-      left: 380px;
+      @include adaptive-value("bottom", 0, 250, 0);
+      @include adaptive-value("right", 1280, 187, 0);
+      @include adaptive-value("width", 53.93, 26.965, 0);
+      @include adaptive-value("height", 62, 31, 0);
    }
    &__zigzag-center {
       position: absolute;
-      bottom: 20px;
-      right: 650px;
+      @include adaptive-value("bottom", 20, 197, 0);
+      @include adaptive-value("right", 650, -20, 0);
+      @include adaptive-value("width", 119.27, 59.64, 0);
+      @include adaptive-value("height", 108.37, 54.18, 0);
    }
    &__arc {
       position: absolute;
-      top: 370px;
-      left: 330px;
+      // top: 370px;
+      // left: 330px;
+      bottom: 0px;
+      // left: -80px;
+
+      @include adaptive-value("left", -80, -45, 0);
+      @include adaptive-value("width", 178.61, 106, 0);
+      @include adaptive-value("height", 35, 21, 0);
+
+      z-index: -1;
+   }
+   &__burger {
+      display: none;
+      position: absolute;
+      z-index: 100;
+      top: 4px;
+      right: 0;
+      width: 30px;
+      height: 24px;
+   }
+   &__burger-item {
+      display: block;
+      width: 30px;
+      height: 4px;
+      background-color: #ff553e;
+      border-radius: 4px;
+      margin-bottom: 5px;
    }
 }
 
@@ -145,6 +216,7 @@
 
 .nav {
    display: flex;
+   justify-content: center;
    align-items: center;
    &__item:not(:last-child) {
       margin-right: 48px;
@@ -194,4 +266,8 @@
    &__signup:hover {
       opacity: 0.7;
    }
+}
+.span__traking {
+   display: inline-block;
+   position: relative;
 }

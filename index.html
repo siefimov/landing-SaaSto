@@ -14,11 +14,16 @@
       <header class="header">
          <div class="container">
 
+            <!-- <div class="header__inner"> -->
             <nav class="header__top">
                <a class="header__top-logo logo" href="#">
                   <img class="logo__img" src="./img/header/logo.svg" alt="logo saasto">
                </a>
-
+               <div class="header__burger">
+                  <span class="header__burger-item"></span>
+                  <span class="header__burger-item"></span>
+                  <span class="header__burger-item"></span>
+               </div>
                <ul class="header__top-nav nav">
                   <li class="nav__item">
                      <a href="#" class="nav__item-link">Demos</a>
@@ -41,30 +46,26 @@
             </nav>
 
             <section class="header__content">
-
-               <h1 class="header__content-title">A collaborative Time Tracking that you Need</h1>
+               <h1 class="header__content-title">A collaborative Time <span class="span__traking">
+                     Tracking<img class="header__arc" src="./img/header/arc.svg" alt="zigzag image"></span> that
+                  you Need</h1>
                <p class="header__content-text">An enim nullam tempor sapien gravida donec enim ipsum porta justo congue
                   magna at pretium purus pretium ligula </p>
                <a class="header__content-btn" href="#">Start 14 Days Trial</a>
+               <div class="header__elements-alarm">
+                  <img class="header__elements-alarm-item" src="./img/header/alarm-clock.png" alt="alarm image">
+               </div>
+               <img class="header__elements-todo" src="./img/header/todos.png" alt="todo image">
             </section>
 
          </div>
-
-
-
-         <div class="header__elements">
-            <img class="header__elements-alarm" src="./img/header/alarm-clock.png" alt="alarm image">
-            <img class="header__elements-todo" src="./img/header/todos.png" alt="todo image">
-         </div>
-
-
          <div class="header__figures">
             <img class="header__zigzag-top-right" src="./img/header/zigzag-right-top.svg" alt="zigzag image">
             <img class="header__zigzag-top-right2" src="./img/header/zigzag-right-top2.svg" alt="zigzag image">
             <img class="header__zigzag-center" src="./img/header/zigzag-center.svg" alt="zigzag image">
             <img class="header__zigzag-left-bottom" src="./img/header/zigzag-left-bottom.svg" alt="zigzag image">
             <img class="header__zigzag-left-top" src="./img/header/zigzag-left-top.svg" alt="zigzag image">
-            <img class="header__arc" src="./img/header/arc.svg" alt="zigzag image">
+            <!-- <img class="header__arc" src="./img/header/arc.svg" alt="zigzag image"> -->
          </div>
          <div class="header__img-left">
             <img class="header__img" src="./img/header/mobile-screen-left.png" alt="mobile screen">
@@ -73,9 +74,6 @@
             <img class="header__img" src="./img/header/mobile-screen-right.png" alt="mobile screen">
          </div>
       </header>
-
-
-
 
       <main class="main">
 
@@ -305,7 +303,7 @@
                            <button class="filter-options__button" type="submit">Start 14 Days Trial</button>
                         </div>
                      </div>
-                     <div class="filter-options__premium">
+                     <div class="filter-options__premium active">
                         <div class="filter-options__item">
                            <h3 class="filter-options__title">Premium</h3>
                            <div class="filter-options__text-wrapper">
@@ -372,36 +370,57 @@
                      <img class="top-row__shape" src="./img/clients/shape.svg" alt="shape">
                   </div>
                   <div class="clients__bottom-row bottom-row">
-                     <div class="bottom-row__ellipse"></div>
-                     <div class="bottom-row__content">
-                        <div class="bottom-row__content-text">Leading an organization is incredibly rewarding and
-                           equally
-                           <br>
-                           humbling. Confidence and humility. Every success is built on lessons <br> from mistakes made
-                           is
-                           incredibly rewarding
+
+                     <div class="bottom-row__wrapper">
+                        <div class="bottom-row__ellipse--light-pink"></div>
+                        <div class="bottom-row__content">
+                           <div class="bottom-row__content-text">Leading an organization is incredibly rewarding and
+                              equally
+                              <br>
+                              humbling. Confidence and humility. Every success is built on lessons <br> from mistakes
+                              made
+                              is
+                              incredibly rewarding
+                           </div>
+                           <h3 class="bottom-row__content-name">Mila McSabbu</h3>
+                           <p class="bottom-row__content-job">Designer</p>
                         </div>
-                        <h3 class="bottom-row__content-name">Mila McSabbu</h3>
-                        <p class="bottom-row__content-job">Designer</p>
-                        <div class="bottom-row__content-navigator content-navigator">
-                           <ul class="content-navigator__list">
-                              <li class="content-navigator__item--active">
-                                 <a class="content-navigator__item-link" href="#"></a>
-                              </li>
-                              <li class="content-navigator__item">
-                                 <a class="content-navigator__item-link" href="#"></a>
-                              </li>
-                              <li class="content-navigator__item">
-                                 <a class="content-navigator__item-link" href="#"></a>
-                              </li>
-                              <li class="content-navigator__item">
-                                 <a class="content-navigator__item-link" href="#"></a>
-                              </li>
-                           </ul>
+                     </div>
+                     <div class="bottom-row__wrapper none">
+                        <div class="bottom-row__ellipse--light-blue"></div>
+                        <div class="bottom-row__content">
+                           <div class="bottom-row__content-text">Leading an organization is incredibly rewarding and
+                              equally
+                              <br>
+                              humbling. Confidence and humility. Every success is built on lessons <br> from mistakes
+                              made
+                              is
+                              incredibly rewarding
+                           </div>
+                           <h3 class="bottom-row__content-name">Jhon Wickley</h3>
+                           <p class="bottom-row__content-job">CEO</p>
                         </div>
                      </div>
 
+                     <div class="bottom-row__content-navigator content-navigator">
+                        <ul class="content-navigator__list">
+                           <li class="content-navigator__item item-active">
+                              <!-- <a class="content-navigator__item-link" href="#"></a> -->
+                           </li>
+                           <li class="content-navigator__item">
+                              <!-- <a class="content-navigator__item-link" href="#"></a> -->
+                           </li>
+                           <li class="content-navigator__item">
+                              <!-- <a class="content-navigator__item-link" href="#"></a> -->
+                           </li>
+                           <li class="content-navigator__item">
+                              <!-- <a class="content-navigator__item-link" href="#"></a> -->
+                           </li>
+                        </ul>
+                     </div>
+
                   </div>
+
                   <img class="clients__inner-like" src="./img/clients/like.png" alt="like">
                   <img class="clients__inner-chat" src="./img/clients/chat.png" alt="chat">
                   <img class="clients__inner-emoji" src="./img/clients/emoji.png" alt="emoji">
