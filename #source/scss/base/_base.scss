@@ -32,6 +32,10 @@ body {
    flex: 1 1 auto;
    position: relative;
 }
-.footer {
-   // flex: 0 1 auto;
+.title {
+   @include adaptive-value("font-size", 48, 24, 0);
+}
+
+.content-text {
+   @include adaptive-value("font-size", 20, 16, 0);
 }

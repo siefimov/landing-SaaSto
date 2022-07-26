@@ -46,3 +46,6 @@ navItem.forEach((elem) => {
 
    });
 });
+
+console.log(document.querySelectorAll('.expertises__text')[2]);
+ 

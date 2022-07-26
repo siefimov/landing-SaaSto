@@ -5,7 +5,7 @@
    &__title {
       font-family: $secondFontFamily;
       font-weight: 600;
-      font-size: 48px;
+      // font-size: 48px;
       line-height: 70px;
       color: #18063c;
       margin-bottom: 20px;
@@ -15,7 +15,7 @@
    &__text {
       opacity: 0.8;
    }
-   &__shape{
+   &__shape {
       position: absolute;
       top: 38px;
       left: 550px;

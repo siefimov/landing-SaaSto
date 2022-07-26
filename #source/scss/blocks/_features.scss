@@ -3,6 +3,8 @@
    top: -165px;
    background-image: url("../img/funfact/back.png");
    background-repeat: no-repeat;
+   background-size: 100vw;
+
    z-index: 10;
    &__inner {
       display: flex;
@@ -26,7 +28,7 @@
    &__text-title {
       font-family: $secondFontFamily;
       font-weight: 600;
-      font-size: 48px;
+      // font-size: 48px;
       line-height: 70px;
       text-transform: capitalize;
       color: #18063c;
@@ -40,7 +42,11 @@
    &__rocket {
       position: absolute;
       top: 50px;
-      right: -20px;
+      @include adaptive-value("top", 50, -115, 0);
+      // right: -20px;
+      @include adaptive-value("right", -20, 150, 0);      
       z-index: 10;
+      @include adaptive-value("width", 197, 100, 0);
+      @include adaptive-value("height", 177.23, 92, 0);
    }
 }

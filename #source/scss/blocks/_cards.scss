@@ -21,7 +21,6 @@
    }
    &__content {
       padding: 27px 34px 27px 28px;
-      
    }
    &__icon {
       width: 88px;
@@ -38,12 +37,15 @@
    &__title {
       font-family: $secondFontFamily;
       font-weight: 600;
-      font-size: 28px;
-      line-height: 100%;
+      @include adaptive-value("font-size", 28, 20, 0);
+      // font-size: 28px;
+      // line-height: 100%;
+      @include adaptive-value("line-height", 28, 20, 0);
       color: #ffffff;
       margin-bottom: 10px;
    }
    &__description {
+      @include adaptive-value("font-size", 18, 16, 0);
       line-height: 26px;
       color: #ffffff;
       opacity: 0.8;

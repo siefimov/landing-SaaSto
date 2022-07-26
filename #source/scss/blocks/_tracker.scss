@@ -30,7 +30,7 @@
    &__content-title {
       font-family: $secondFontFamily;
       font-weight: 600;
-      font-size: 48px;
+      // font-size: 48px;
       line-height: 70px;
       color: #18063c;
       margin-bottom: 20px;
@@ -65,10 +65,10 @@
       border-radius: 28px;
       margin-right: 48px;
    }
-   &__item--time{
+   &__item--time {
       position: relative;
    }
-   &__item--budget{
+   &__item--budget {
       position: relative;
    }
    &__item--expenses {

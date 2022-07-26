@@ -44,6 +44,7 @@
       color: #40201e;
       opacity: 0.8;
       margin-bottom: 68px;
+      // @include adaptive-value("magrin-bottom", 68, 40, 0);
       // max-width: 595px;
       @include adaptive-value("max-width", 595, 307, 0);
       text-align: center;

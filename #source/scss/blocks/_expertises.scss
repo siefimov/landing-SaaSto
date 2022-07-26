@@ -1,21 +1,27 @@
 .expertises {
    margin-bottom: 55px;
    margin-left: 80px;
-   padding-top: 94px;
+   @include adaptive-value("margin-left", 80, 0, 0);
+   // padding-top: 94px;
+   @include adaptive-value("padding-top", 94, 0, 0);
    max-width: 696px;
    width: 100%;
    
    &__row {
       display: flex;
-      margin-left: 80px;
-      max-width: 696px;
+      // margin-left: 80px;
+      @include adaptive-value("margin-left", 80, 0, 0);
+      // max-width: 696px;
+      @include adaptive-value("max-width", 696, 500, 0);
       justify-content: space-between;
    }
    &__number {
       font-family: $secondFontFamily;
       font-weight: 600;
-      font-size: 48px;
-      line-height: 64px;
+      // font-size: 48px;
+      @include adaptive-value("font-size", 48, 24, 0);
+      // line-height: 64px;
+      @include adaptive-value("line-height", 64, 24, 0);
       color: #18063c;
       margin-bottom: 10px;
    }
