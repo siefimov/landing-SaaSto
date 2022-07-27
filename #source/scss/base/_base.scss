@@ -37,5 +37,5 @@ body {
 }
 
 .content-text {
-   @include adaptive-value("font-size", 20, 16, 0);
+   @include adaptive-value("font-size", 18, 16, 0);
 }
