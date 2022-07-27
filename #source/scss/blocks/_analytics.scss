@@ -138,18 +138,22 @@
       @include adaptive-value("margin-bottom", 48, 24, 0);
    }
    &__item-img {
-      min-width: 88px;
-      height: 88px;
-      border-radius: 20px;
+      // min-width: 88px;
+      @include adaptive-value("min-width", 88, 56, 0);
+      @include adaptive-value("height", 88, 56, 0);
+      // height: 88px;
+      // border-radius: 20px;
+      @include adaptive-value("border-radius", 20, 15, 0);
       margin-right: 24px;
       margin-bottom: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
    }
-   // &__img {
-   //    padding: 20px;
-   // }
+   &__img {
+      @include adaptive-value("width", 48, 29.26, 0);
+      @include adaptive-value("height", 49.46, 29.26, 0);
+   }
    &__item-img01 {
       background: #fa855c;
    }

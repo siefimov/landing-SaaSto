@@ -170,6 +170,9 @@
    .title {
       line-height: 36px;
    }
+   .analytics__content {
+      margin-left: 24px;
+   }
 }
 
 @media (max-width: 566.99px) {
@@ -190,12 +193,11 @@
          // left: -70px;
       }
    }
-.analytics{
-   &__content{
-      margin-left: 24px;
+   .analytics {
+      &__content {
+         margin-left: 24px;
+      }
    }
-}
-   
 }
 
 @media (max-width: 480px) {
@@ -226,6 +228,9 @@
          bottom: 250px;
          right: 30px;
       }
+   }
+   .features__inner{
+      margin-bottom: 0;
    }
 }
 
@@ -265,8 +270,8 @@
          right: -15px;
       }
    }
-   .analytics{
-      &__content-img{
+   .analytics {
+      &__content-img {
          top: 12px;
          right: 163px;
       }
