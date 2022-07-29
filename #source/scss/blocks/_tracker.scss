@@ -15,9 +15,23 @@
    &__right {
       flex: 1 1 50%;
       position: absolute;
-      top: -80px;
-      right: -183px;
-      // left: 153px;
+      @include adaptive-value("top", -80, 16, 0);
+      @include adaptive-value("right", -183, 150, 0);
+      margin-left: calc(30px + (153 - 30) * ((100vw - 1169px) / (1920 - 1169)));
+      @include adaptive-value("width", 682, 341, 0);
+      @include adaptive-value("height", 618, 309, 0);
+      // padding-right: 50px;
+   }
+   &__right-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+   }
+   &__right-mobile-row {
+      display: none;
    }
    &__content {
       max-width: 707px;
@@ -44,26 +58,26 @@
       right: 310px;
       z-index: -1;
    }
+   &-blocks__item-img01,
+   &-blocks__item-img02,
+   &-blocks__item-img03 {
+      // width: 116px;
+      @include adaptive-value("width", 116, 56, 0);
+      @include adaptive-value("height", 116, 56, 0);
+      // height: 116px;
+      // border-radius: 28px;
+      @include adaptive-value("border-radius", 28, 10, 0);
+      // margin-right: 48px;
+      @include adaptive-value("margin-right", 48, 18, 0);
+   }
    &-blocks__item-img01 {
-      width: 116px;
-      height: 116px;
       background: #5bc17f;
-      border-radius: 28px;
-      margin-right: 48px;
    }
    &-blocks__item-img02 {
-      width: 116px;
-      height: 116px;
       background: #fe6292;
-      border-radius: 28px;
-      margin-right: 48px;
    }
    &-blocks__item-img03 {
-      width: 116px;
-      height: 116px;
       background: #6b72ff;
-      border-radius: 28px;
-      margin-right: 48px;
    }
    &__item--time {
       position: relative;
@@ -74,29 +88,21 @@
    &__item--expenses {
       margin-left: 176px;
    }
-   &__right {
-      margin-left: 153px;
-      width: 682px;
-      height: 618px;
-   }
-   &__right-img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: inline-block;
-      width: 100%;
-      height: 100%;
-   }
    &__object-target {
       position: absolute;
       top: 0;
       right: -155px;
       transform: rotate(11.52deg);
+      @include adaptive-value("width", 375.07, 101.27, 0);
+      @include adaptive-value("height", 352.22, 95.1, 0);
    }
    &__object-plan {
       position: absolute;
       top: 376px;
+      // @include adaptive-value("top");
       left: -161px;
+      @include adaptive-value("width", 383, 103, 0);
+      @include adaptive-value("height", 386, 104, 0);
    }
 
    &__vector-one {
