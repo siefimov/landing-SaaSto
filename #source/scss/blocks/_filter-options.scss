@@ -1,7 +1,9 @@
 .filter-options {
    display: flex;
    justify-content: center;
-
+   &__free{
+      margin-right: 30px;
+   }
    &__item {
       display: flex;
       flex-direction: column;
@@ -16,9 +18,9 @@
       width: 470px;
       transition: all 0.5s ease;
    }
-   &__item:first-child {
-      margin-right: 30px;
-   }
+   // &__item:not(:last-child) {
+   //    margin-right: 30px;
+   // }
    &__title {
       font-weight: 600;
       font-size: 48px;

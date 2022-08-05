@@ -985,7 +985,9 @@ body {
 .pricing__filter-monthly, .pricing__filter-yearly {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: calc(
+         18px + 6 * ((100vw - 375px) / 1545)
+      );
   line-height: 28px;
   color: #404040;
 }
@@ -1016,6 +1018,9 @@ body {
   display: flex;
   justify-content: center;
 }
+.filter-options__free {
+  margin-right: 30px;
+}
 .filter-options__item {
   display: flex;
   flex-direction: column;
@@ -1026,9 +1031,6 @@ body {
   padding: 64px 0 48px;
   width: 470px;
   transition: all 0.5s ease;
-}
-.filter-options__item:first-child {
-  margin-right: 30px;
 }
 .filter-options__title {
   font-weight: 600;
@@ -1568,6 +1570,36 @@ input:checked + .slider:before {
   .tracker__object-plan {
     top: -145px;
   }
+  .partners__tools {
+    width: 80%;
+    height: 80%;
+  }
+  .partners__tools-left {
+    padding-left: 20px;
+  }
+  .partners__left-1 {
+    width: 192px;
+    height: 121.6px;
+  }
+  .partners__left-2 {
+    width: 286.4px;
+    height: 191.2px;
+  }
+  .partners__left-3 {
+    width: 228.8px;
+    height: 152.8px;
+  }
+  .partners__right-1 {
+    width: 252px;
+    height: 152.8px;
+  }
+  .partners__right-2 {
+    width: 308px;
+    height: 194.4px;
+  }
+  .partners__content {
+    padding-right: 20px;
+  }
 }
 @media (max-width: 1168px) {
   .tracker {
@@ -1608,6 +1640,33 @@ input:checked + .slider:before {
     left: calc(295px + 670 * (100vw - 375px) / 793);
     top: -67px;
     top: calc(-29px + -38 * (100vw - 375px) / 793);
+  }
+  .filter-options__item {
+    width: 400px;
+  }
+  .partners__left-1 {
+    width: 144px;
+    height: 91.2px;
+  }
+  .partners__left-2 {
+    width: 214.8px;
+    height: 143.4px;
+  }
+  .partners__left-3 {
+    width: 171.6px;
+    height: 114.6px;
+  }
+  .partners__right-1 {
+    width: 189px;
+    height: 114.6px;
+  }
+  .partners__right-2 {
+    width: 231px;
+    height: 145.8px;
+  }
+  .partners__content {
+    padding-right: 80px;
+    padding-top: 17px;
   }
 }
 @media (max-width: 992px) {
@@ -1695,6 +1754,41 @@ input:checked + .slider:before {
   .expertises__row {
     margin: 0 auto;
   }
+  .filter-options__title {
+    margin-bottom: 24px;
+  }
+  .filter-options__text-wrapper {
+    margin-bottom: 24px;
+  }
+  .filter-options__text:first-child {
+    margin-bottom: 0px;
+  }
+  .filter-options__price {
+    margin-bottom: 35px;
+  }
+  .filter-options__item {
+    width: 360px;
+  }
+  .filter-options__premium::before, .filter-options__premium::after {
+    display: none;
+  }
+  .pricing__img-hand {
+    display: none;
+  }
+  .partners {
+    padding-top: 80px;
+  }
+  .partners__inner {
+    flex-direction: column-reverse;
+  }
+  .partners__left-3 {
+    display: none;
+  }
+  .partners__content {
+    padding-top: 0;
+    padding-left: 55px;
+    padding-bottom: 50px;
+  }
 }
 @media (max-width: 876px) {
   .analytics__inner {
@@ -1703,6 +1797,15 @@ input:checked + .slider:before {
   .analytics__objects {
     margin-top: 0;
     margin-bottom: 80px;
+  }
+  .filter-options {
+    flex-direction: column;
+  }
+  .filter-options__free {
+    margin-right: 0;
+  }
+  .filter-options__item:first-child {
+    margin-bottom: 28px;
   }
 }
 @media (max-width: 767.99px) {
@@ -1754,6 +1857,7 @@ input:checked + .slider:before {
   }
   .title {
     line-height: 36px;
+    margin-bottom: 10px;
   }
   .analytics__content {
     margin-left: 24px;
@@ -1763,6 +1867,15 @@ input:checked + .slider:before {
   }
   .tracker__vector-one, .tracker__vector-two, .tracker__right-mobile-three {
     display: none;
+  }
+  .pricing {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .partners__left-1, .partners__left-2, .partners__right-1, .partners__right-2 {
+    width: 170px;
+    height: 170px;
+    border-radius: 15px;
   }
 }
 @media (max-width: 566.99px) {
@@ -1815,6 +1928,11 @@ input:checked + .slider:before {
   .tracker__content-text {
     display: none;
   }
+  .partners__left-1, .partners__left-2, .partners__right-1, .partners__right-2 {
+    width: 140px;
+    height: 140px;
+    border-radius: 15px;
+  }
 }
 @media (max-width: 480px) {
   .header__content {
@@ -1844,6 +1962,105 @@ input:checked + .slider:before {
   }
   .features__inner {
     margin-bottom: 0;
+  }
+  .pricing__text {
+    margin-bottom: 16px;
+  }
+  .content-text {
+    display: inline-block;
+  }
+  .switch {
+    width: 55px;
+    height: 26px;
+  }
+  .slider::before {
+    width: 16px;
+    height: 16px;
+    left: 7px;
+  }
+  .filter-options__item {
+    width: 327px;
+    height: 288px;
+    border: 1px solid #ff553e;
+    border-radius: 30px;
+    position: relative;
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+  .filter-options__title {
+    font-size: 20px;
+    line-height: 20px;
+    order: 1;
+    align-self: flex-start;
+    margin-left: 28px;
+  }
+  .filter-options__text-wrapper {
+    order: 3;
+    align-self: flex-start;
+    margin-left: 28px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+  .filter-options__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    display: inline-block;
+  }
+  .filter-options__text:first-child {
+    margin-bottom: 16px;
+  }
+  .filter-options__price {
+    order: 2;
+    position: absolute;
+    top: 36px;
+    right: 26px;
+  }
+  .filter-options__button {
+    order: 4;
+  }
+  .filter-options__number-price {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .filter-options__terms {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.4;
+  }
+  .filter-options__number-currency {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  input:checked + .slider:before {
+    transform: translateX(25px);
+  }
+  .partners__left-1, .partners__left-2, .partners__right-1, .partners__right-2 {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+  }
+  .partners__tools-left {
+    padding-left: 24px;
+  }
+  .partners__content {
+    padding-left: 24px;
+  }
+  .partners__tools {
+    justify-content: start;
+    gap: 16px;
+  }
+  .partners__tools-left {
+    gap: 16px;
+  }
+  .partners__tools-right {
+    gap: 16px;
+  }
+  .partners__text {
+    margin-bottom: 28px;
   }
 }
 @media (max-width: 376px) {

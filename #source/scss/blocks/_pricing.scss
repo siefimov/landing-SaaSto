@@ -34,7 +34,8 @@
    &__filter-yearly {
       font-family: $secondFontFamily;
       font-weight: 500;
-      font-size: 24px;
+      // font-size: 24px;
+      @include adaptive-value("font-size", 24, 18, 0);
       line-height: 28px;
       color: #404040;
    }
@@ -59,12 +60,10 @@
       margin-left: 6px;
       // transform: translate(0px);
    }
-   &__img-hand{
+   &__img-hand {
       position: absolute;
       left: -90px;
       bottom: 201px;
       transform: rotate(15deg);
    }
 }
-
-
