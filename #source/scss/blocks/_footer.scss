@@ -36,14 +36,46 @@
 
 .terms {
    display: flex;
-      justify-content: space-between;
+   justify-content: space-between;
+
+   @include adaptive-value("font-size", 18, 16, 0);
    &__documents {
       display: flex;
       justify-content: space-between;
       cursor: pointer;
    }
-   &__documents-tac{
+   &__documents-tac {
       margin-right: 48px;
+   }
+}
 
+.footer-nav {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   &__item:not(:last-child) {
+      margin-right: 48px;
+   }
+   &__item {
+      font-family: $secondFontFamily;
+      font-weight: 400;
+      line-height: 24px;
+      cursor: pointer;
+   }
+   &__item-link {
+      line-height: 30px;
+      color: #1c0e0d;
+   }
+   &__item-link::after {
+      content: "";
+      display: block;
+      width: 0%;
+      height: 1px;
+
+      background-color: #1c0e0d;
+      transition: width 0.2s ease-in;
+   }
+   &__item-link:hover::after {
+      width: 100%;
    }
 }

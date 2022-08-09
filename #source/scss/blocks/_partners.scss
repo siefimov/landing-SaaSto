@@ -82,6 +82,9 @@
       padding-top: 128px;
       max-width: 525px;
    }
+   &__title-wrapper {
+      position: relative;
+   }
    &__title {
       font-family: $secondFontFamily;
       font-weight: 600;
@@ -89,13 +92,23 @@
       line-height: 70px;
       color: #18063c;
       margin-bottom: 24px;
+      position: relative;
+      z-index: 10;
    }
+   &__title-img {
+      position: absolute;
+      top: 35px;
+      right: 188px;
+      z-index: 1;
+   }
+
    &__text {
       display: inline-block;
       opacity: 0.8;
       margin-bottom: 48px;
       box-sizing: border-box;
       max-width: 471px;
+      @include adaptive-value("line-height", 36, 29, 0);
    }
    &__link {
       font-family: $secondFontFamily;
@@ -111,7 +124,7 @@
       display: inline-block;
       box-sizing: border-box;
    }
-   &__link:hover{
+   &__link:hover {
       background-color: #fbe7e4;
    }
 }

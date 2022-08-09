@@ -23,6 +23,8 @@
       top: -148px;
       left: 55px;
       z-index: -1;
+      @include adaptive-value("width", 406, 203, 0);
+      @include adaptive-value("height", 817, 405.8, 0);
    }
    &__content-title {
       font-family: $secondFontFamily;
@@ -33,9 +35,10 @@
       margin-bottom: 24px;
    }
    &__content-text {
-      font-size: 20px;
+      // font-size: 20px;
       opacity: 0.8;
       margin-bottom: 48px;
+      @include adaptive-value("line-height", 36, 30, 0);
    }
 }
 .app-content {
@@ -49,6 +52,8 @@
       position: absolute;
       top: 290px;
       right: -550px;
+      @include adaptive-value("width", 632, 176, 0);
+      @include adaptive-value("height", 218, 60, 0);
    }
 }
 
@@ -58,9 +63,12 @@
 .content-button__app-store,
 .content-button__google-play {
    display: flex;
+   justify-content: center;
    align-items: center;
-   padding: 24px 40px;
+   display: inline-block;
+   padding: 24px 40px 14px 40px;
    cursor: pointer;
+   flex: 0 1 auto;
 }
 .content-button__app-store {
    background: #ff553e;
@@ -70,4 +78,13 @@
 .content-button__google-play {
    border: 1px solid #ff553e;
    border-radius: 40px;
+   box-sizing: border-box;
+}
+.google-play__logo{
+   display: inline-block;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   // line-height: 18px;
+   
 }

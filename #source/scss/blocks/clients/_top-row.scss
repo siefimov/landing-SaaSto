@@ -20,5 +20,7 @@
       top: 38px;
       left: 550px;
       z-index: 1;
+      @include adaptive-value("width", 176, 117, 0);
+      @include adaptive-value("height", 35, 23, 0);
    }
 }
