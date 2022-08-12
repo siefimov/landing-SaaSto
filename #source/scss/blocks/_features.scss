@@ -28,23 +28,41 @@
    &__text-title {
       font-family: $secondFontFamily;
       font-weight: 600;
-      // font-size: 48px;
       line-height: 70px;
       text-transform: capitalize;
       color: #18063c;
       margin-bottom: 19px;
+
+      transform: translate(0px, 120%);
+      opacity: 0;
+      transition: all 0.8s ease 0s;
+
+      &._active {
+         transform: translate(0px, 0px);
+         opacity: 1;
+      }
    }
    &__text-text {
       color: $baseFontColor;
       opacity: 0.8;
       max-width: 659px;
+
+      transform: translate(0px, 120%);
+      opacity: 0;
+      transition: all 0.8s ease 0s;
+
+      &._active {
+         transform: translate(0px, 0px);
+         opacity: 1;
+         transition: all 0.8s ease 0.4s;
+      }
    }
    &__rocket {
       position: absolute;
       top: 50px;
       @include adaptive-value("top", 50, -115, 0);
       // right: -20px;
-      @include adaptive-value("right", -20, 150, 0);      
+      @include adaptive-value("right", -20, 150, 0);
       z-index: 10;
       @include adaptive-value("width", 197, 100, 0);
       @include adaptive-value("height", 177.23, 92, 0);

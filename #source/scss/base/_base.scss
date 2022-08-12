@@ -34,8 +34,27 @@ body {
 }
 .title {
    @include adaptive-value("font-size", 48, 24, 0);
+   transform: translate(0px, 120%);
+   opacity: 0;
+   transition: all 0.8s ease 0s;
+
+   &._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+   }
 }
 
 .content-text {
    @include adaptive-value("font-size", 18, 16, 0);
+}
+
+._anim-show {
+   transform: translate(0px, 150%);
+   opacity: 0;
+   transition: all 1s ease 0.3s;
+}
+._anim-show._active,
+._active ._anim-show {
+   opacity: 1;
+   transform: translate(0px, 0px);
 }

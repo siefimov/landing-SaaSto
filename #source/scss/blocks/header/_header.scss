@@ -30,13 +30,19 @@
    &__content-title {
       font-family: $secondFontFamily;
       font-weight: 700;
-      // font-size: 64px;
       @include adaptive-value("font-size", 64, 28, 0);
-      // line-height: 90px;
       @include adaptive-value("line-height", 90, 50, 0);
-      color: #1c0e0d;
-      margin-bottom: 24px;
       @include adaptive-value("margin-bottom", 24, 12, 0);
+      color: #1c0e0d;
+
+      transform: translate(0px, 120%);
+      opacity: 0;
+      transition: all 0.8s ease 0s;
+
+      &._active {
+         transform: translate(0px, 0px);
+         opacity: 1;
+      }
    }
    &__content-text {
       // font-size: 20px;
@@ -44,10 +50,18 @@
       color: #40201e;
       opacity: 0.8;
       margin-bottom: 68px;
-      // @include adaptive-value("magrin-bottom", 68, 40, 0);
-      // max-width: 595px;
       @include adaptive-value("max-width", 595, 307, 0);
       text-align: center;
+
+      transform: translate(0px, 120%);
+      opacity: 0;
+      transition: all 0.8s ease 0s;
+
+      &._active {
+         transform: translate(0px, 0px);
+         opacity: 1;
+         transition: all 0.8s ease 0.4s;
+      }
    }
    &__content-btn {
       background: #ff553e;

@@ -354,3 +354,19 @@ let ladder = {
 };
 
 ladder.up().up().down().showStep().down().showStep();
+
+// - - - - - - - -  -
+let warior = {
+   id: 01,
+   name: "Mars",
+   level: 5,
+   tellPhrase: () => {
+      // console.log(`Hello! My name is ${warior.name}.`);
+      return `Hello! My name is ${this.name}.`
+   },
+};
+
+console.log(warior.tellPhrase());
+ 
+
+

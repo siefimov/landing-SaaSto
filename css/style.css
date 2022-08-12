@@ -151,12 +151,31 @@ body {
   font-size: calc(
          24px + 24 * ((100vw - 375px) / 1545)
       );
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+.title._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .content-text {
   font-size: calc(
          16px + 2 * ((100vw - 375px) / 1545)
       );
+}
+
+._anim-show {
+  transform: translate(0px, 150%);
+  opacity: 0;
+  transition: all 1s ease 0.3s;
+}
+
+._anim-show._active,
+._active ._anim-show {
+  opacity: 1;
+  transform: translate(0px, 0px);
 }
 
 .header {
@@ -198,11 +217,17 @@ body {
   line-height: calc(
          50px + 40 * ((100vw - 375px) / 1545)
       );
-  color: #1c0e0d;
-  margin-bottom: 24px;
   margin-bottom: calc(
          12px + 12 * ((100vw - 375px) / 1545)
       );
+  color: #1c0e0d;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+.header__content-title._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 .header__content-text {
   font-size: calc(
@@ -215,6 +240,14 @@ body {
          307px + 288 * ((100vw - 375px) / 1545)
       );
   text-align: center;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+.header__content-text._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.4s;
 }
 .header__content-btn {
   background: #ff553e;
@@ -503,11 +536,26 @@ body {
   text-transform: capitalize;
   color: #18063c;
   margin-bottom: 19px;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+.features__text-title._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 .features__text-text {
   color: #404040;
   opacity: 0.8;
   max-width: 659px;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+.features__text-text._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.4s;
 }
 .features__rocket {
   position: absolute;
@@ -539,6 +587,11 @@ body {
   border-radius: 48px;
   max-width: 369px;
   min-height: 250px;
+  transform: scale(0);
+  transition: all 0.8s ease 0.4s;
+}
+.cards__item._active {
+  transform: scale(1);
 }
 .cards__item-one {
   background: #70d0dc;
@@ -607,6 +660,14 @@ body {
       );
   max-width: 696px;
   width: 100%;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+.expertises._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.4s;
 }
 .expertises__row {
   display: flex;
