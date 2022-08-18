@@ -2345,9 +2345,6 @@ input:checked + .slider:before {
     height: 174px;
     border-radius: 40px;
   }
-  .title {
-    margin-bottom: -8px;
-  }
   .content-navigator {
     top: 510px;
   }
